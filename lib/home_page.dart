@@ -178,22 +178,22 @@ class _HomePageState extends State<HomePage> {
                 _currentPosition != null
                     ? Text(
                         'Lokasi: ${_currentPosition!.latitude.toStringAsFixed(4)}, ${_currentPosition!.longitude.toStringAsFixed(4)} | Zona waktu: ${_localTimeZone ?? '-'}',
-                        style: const TextStyle(
-                            color: Colors.white70, fontSize: 14),
+                        style:
+                            const TextStyle(color: Colors.black, fontSize: 14),
                       )
                     : const Text(
                         'Lokasi: Tidak tersedia',
-                        style: TextStyle(color: Colors.white70, fontSize: 14),
+                        style: TextStyle(color: Colors.black, fontSize: 14),
                       ),
                 if (_userCountry != null)
                   Text(
                     'Negara: $_userCountry',
-                    style: const TextStyle(color: Colors.white70, fontSize: 14),
+                    style: const TextStyle(color: Colors.black, fontSize: 14),
                   ),
                 if (_popularCoin != null)
                   Text(
                     'Koin Populer di Negara Anda: $_popularCoin',
-                    style: const TextStyle(color: Colors.white70, fontSize: 14),
+                    style: const TextStyle(color: Colors.black, fontSize: 14),
                   ),
                 const SizedBox(height: 6),
                 _securityTips.isNotEmpty
@@ -201,8 +201,8 @@ class _HomePageState extends State<HomePage> {
                         'Tips Keamanan: ${_securityTips[0]}',
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(
-                            color: Colors.white70, fontSize: 14),
+                        style:
+                            const TextStyle(color: Colors.black, fontSize: 14),
                       )
                     : const SizedBox.shrink(),
               ],

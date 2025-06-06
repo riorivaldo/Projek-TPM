@@ -223,7 +223,8 @@ class _RegisterPageState extends State<RegisterPage> {
                               )
                             : const Text(
                                 'Daftar',
-                                style: TextStyle(fontSize: 18),
+                                style: TextStyle(
+                                    fontSize: 18, color: Colors.white),
                               ),
                       ),
                     ),
